@@ -1,0 +1,662 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "Room"
+  ]
+  title "Room"
+  FPS 120
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  fieldOfView 0.8708
+  orientation 0.0033201531246744936 0.7753296243390645 0.6315480585081977 3.1637101540118584
+  position 0.016833136788328734 14.716608548165842 -2.7248709074569755
+}
+TexturedBackground {
+  texture "noon_building_overcast"
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_empty"
+}
+Wall {
+  translation 0.07 0 -3.07
+  name "wall(1)"
+  size 10 2.4 0.3
+}
+Wall {
+  translation 5.22 0 0.07
+  rotation 0 1 0 1.5708
+  name "wall(2)"
+  size 6.6 2.4 0.3
+}
+Wall {
+  translation -5.07 0 0.0700368
+  rotation 0 1 0 1.5708
+  name "wall(6)"
+  size 6.6 2.4 0.3
+}
+Wall {
+  translation -0.690002 0 -0.48998
+  rotation 0 1 0 1.5708
+  name "wall(5)"
+  size 5 2 0.3
+}
+Wall {
+  translation 0 0 3.17
+  name "wall(3)"
+  size 10.3 2.4 0.3
+}
+DEF Door Solid {
+  translation -0.68 0 2.51
+  rotation 0 1 0 1.5708
+  children [
+    Solid {
+      translation 0 1.975 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.8039 0.6745 0.5764
+            baseColorMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_base_color.jpg"
+              ]
+              filtering 5
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_roughness.jpg"
+              ]
+              filtering 5
+            }
+            metalness 0
+            normalMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_normal.jpg"
+              ]
+              filtering 5
+            }
+            normalMapFactor 0.5
+            occlusionMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_occlusion.jpg"
+              ]
+              filtering 5
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.45 0.025 0.15
+                0.45 0.025 0.15
+                0.45 0.025 -0.15
+                -0.45 0.025 -0.15
+                -0.45 -0.025 -0.15
+                0.45 -0.025 -0.15
+                0.45 -0.025 0.15
+                -0.45 -0.025 0.15
+                -0.45 -0.025 0.15
+                0.45 -0.025 0.15
+                0.45 0.025 0.15
+                -0.45 0.025 0.15
+                0.45 -0.025 -0.15
+                -0.45 -0.025 -0.15
+                -0.45 0.025 -0.15
+                0.45 0.025 -0.15
+                -0.45 -0.025 -0.15
+                -0.45 -0.025 0.15
+                -0.45 0.025 0.15
+                -0.45 0.025 -0.15
+                0.45 -0.025 0.15
+                0.45 -0.025 -0.15
+                0.45 0.025 -0.15
+                0.45 0.025 0.15
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                1 0
+                1 0.33333333333333
+                0 0.33333333333333
+                0 0
+                1 0
+                1 0.33333333333333
+                0 0.33333333333333
+                0 0
+                1 0
+                1 0.055555555555556
+                0 0.055555555555556
+                0 0
+                1 0
+                1 0.055555555555556
+                0 0.055555555555556
+                0 0
+                0.33333333333333 0
+                0.33333333333333 0.055555555555556
+                0 0.055555555555556
+                0 0
+                0.33333333333333 0
+                0.33333333333333 0.055555555555556
+                0 0.055555555555556
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "top frame"
+      model "box"
+      boundingObject Box {
+        size 0.9 0.05 0.3
+      }
+    }
+    Solid {
+      translation -0.475 1 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.8039 0.6745 0.5764
+            baseColorMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_base_color.jpg"
+              ]
+              filtering 5
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_roughness.jpg"
+              ]
+              filtering 5
+            }
+            metalness 0
+            normalMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_normal.jpg"
+              ]
+              filtering 5
+            }
+            normalMapFactor 0.5
+            occlusionMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_occlusion.jpg"
+              ]
+              filtering 5
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.025 1 0.15
+                0.025 1 0.15
+                0.025 1 -0.15
+                -0.025 1 -0.15
+                -0.025 -1 -0.15
+                0.025 -1 -0.15
+                0.025 -1 0.15
+                -0.025 -1 0.15
+                -0.025 -1 0.15
+                0.025 -1 0.15
+                0.025 1 0.15
+                -0.025 1 0.15
+                0.025 -1 -0.15
+                -0.025 -1 -0.15
+                -0.025 1 -0.15
+                0.025 1 -0.15
+                -0.025 -1 -0.15
+                -0.025 -1 0.15
+                -0.025 1 0.15
+                -0.025 1 -0.15
+                0.025 -1 0.15
+                0.025 -1 -0.15
+                0.025 1 -0.15
+                0.025 1 0.15
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "left frame"
+      model "box"
+      boundingObject Box {
+        size 0.05 2 0.3
+      }
+    }
+    Solid {
+      translation 0.475 1 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.8039 0.6745 0.5764
+            baseColorMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_base_color.jpg"
+              ]
+              filtering 5
+            }
+            roughnessMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_roughness.jpg"
+              ]
+              filtering 5
+            }
+            metalness 0
+            normalMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_normal.jpg"
+              ]
+              filtering 5
+            }
+            normalMapFactor 0.5
+            occlusionMap ImageTexture {
+              url [
+                "textures/varnished_pine/varnished_pine_occlusion.jpg"
+              ]
+              filtering 5
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.025 1 0.15
+                0.025 1 0.15
+                0.025 1 -0.15
+                -0.025 1 -0.15
+                -0.025 -1 -0.15
+                0.025 -1 -0.15
+                0.025 -1 0.15
+                -0.025 -1 0.15
+                -0.025 -1 0.15
+                0.025 -1 0.15
+                0.025 1 0.15
+                -0.025 1 0.15
+                0.025 -1 -0.15
+                -0.025 -1 -0.15
+                -0.025 1 -0.15
+                0.025 1 -0.15
+                -0.025 -1 -0.15
+                -0.025 -1 0.15
+                -0.025 1 0.15
+                -0.025 1 -0.15
+                0.025 -1 0.15
+                0.025 -1 -0.15
+                0.025 1 -0.15
+                0.025 1 0.15
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 0.15
+                0 0.15
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.025 0
+                0.025 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+                0 0
+                0.15 0
+                0.15 1
+                0 1
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "right frame"
+      model "box"
+      boundingObject Box {
+        size 0.05 2 0.3
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 0.00902309169077092
+        axis 0 1 0
+        anchor -0.475 1 0.15
+        minStop -1.57
+        maxStop 0.01
+        dampingConstant 10
+      }
+      endPoint Solid {
+        translation -0.0013637586312229555 -4.440892098500626e-16 -0.0032798449309555944
+        rotation 0 1 0 0.009023091690747274
+        children [
+          Transform {
+            translation 0 1 0.175
+            rotation 0 1 0 -1.5708
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColorMap ImageTexture {
+                    url [
+                      "textures/door_base_color.jpg"
+                    ]
+                  }
+                  roughness 0.25
+                  metalness 0
+                  normalMap ImageTexture {
+                    url [
+                      "textures/door_normal.jpg"
+                    ]
+                  }
+                }
+                geometry IndexedFaceSet {
+                  coord Coordinate {
+                    point [
+                      -0.02499637270996 -0.98749999999334 -0.475
+                      0.02500362729004 -0.98749999999334 -0.475
+                      -0.02500362729004 0.98749999999334 -0.475
+                      0.02499637270996 0.98749999999334 -0.475
+                      -0.02499637270996 -0.98749999999334 0.475
+                      0.02500362729004 -0.98749999999334 0.475
+                      -0.02500362729004 0.98749999999334 0.475
+                      0.02499637270996 0.98749999999334 0.475
+                    ]
+                  }
+                  texCoord TextureCoordinate {
+                    point [
+                      0 0
+                      1 0
+                      0 1
+                      1 1
+                      0.0001 0.0001
+                      0.9999 0.0001
+                      0.0001 0.9999
+                      0.9999 0.9999
+                    ]
+                  }
+                  coordIndex [
+                    1, 0, 2, 3, -1, 4, 5, 7, 6, -1, 5, 1, 3, 7, -1, 0, 4, 6, 2, -1, 7, 3, 2, 6, -1, 4, 0, 1, 5, -1
+                  ]
+                  texCoordIndex [
+                    1, 0, 2, 3, -1, 0, 1, 3, 2, -1, 1, 5, 7, 3, -1, 0, 4, 6, 2, -1, 7, 3, 2, 6, -1, 0, 4, 5, 1, -1
+                  ]
+                }
+              }
+            ]
+          }
+          Transform {
+            translation 0.4 1 0.175
+            children [
+              Slot {
+                type "door handle"
+                endPoint Slot {
+                  type "door handle"
+                  endPoint Solid {
+                    children [
+                      DEF HANDLE_SUPPORT Transform {
+                        rotation 1 0 0 1.57
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              baseColorMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                                ]
+                              }
+                              roughnessMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                                ]
+                              }
+                              normalMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                                ]
+                              }
+                            }
+                            geometry Cylinder {
+                              height 0.075
+                              radius 0.0375
+                            }
+                          }
+                        ]
+                      }
+                      DEF HANDLE_AXIS Transform {
+                        rotation 1 0 0 1.57
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              baseColorMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                                ]
+                              }
+                              roughnessMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                                ]
+                              }
+                              normalMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                                ]
+                              }
+                            }
+                            geometry Capsule {
+                              height 0.18
+                              radius 0.0125
+                            }
+                          }
+                        ]
+                      }
+                      DEF BACK_HANDLE Transform {
+                        translation -0.06 0 -0.09
+                        rotation 0 0 1 1.57
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              baseColorMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                                ]
+                              }
+                              roughnessMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                                ]
+                              }
+                              normalMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                                ]
+                              }
+                            }
+                            geometry Capsule {
+                              height 0.12
+                              radius 0.0125
+                            }
+                          }
+                        ]
+                      }
+                      DEF FRONT_HANDLE Transform {
+                        translation -0.06 0 0.09
+                        rotation 0 0 1 1.57
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              baseColorMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+                                ]
+                              }
+                              roughnessMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+                                ]
+                              }
+                              normalMap ImageTexture {
+                                url [
+                                  "textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+                                ]
+                              }
+                            }
+                            geometry Capsule {
+                              height 0.12
+                              radius 0.0125
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                    name "door lever"
+                    model "door lever"
+                    boundingObject Group {
+                      children [
+                        USE HANDLE_SUPPORT
+                        USE HANDLE_AXIS
+                        USE BACK_HANDLE
+                        USE FRONT_HANDLE
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.7
+                    }
+                  }
+                }
+              }
+            ]
+          }
+          Transform {
+            translation 0 1 0.175
+          }
+        ]
+        boundingObject Transform {
+          translation 0 1 0.175
+          children [
+            Box {
+              size 0.95 1.975 0.05
+            }
+          ]
+        }
+        physics Physics {
+          density 200
+        }
+        linearVelocity 4.369893236981043e-11 -2.8992982571966364e-06 9.553135767534762e-11
+        angularVelocity -1.1409482300248562e-06 -9.784953337371233e-11 -5.0394266298160865e-08
+      }
+    }
+  ]
+  name "door"
+  model "door"
+}
+DEF IROBOT_CREATE Create {
+  hidden position_0_0 104347.1904216941
+  hidden position_0_1 121940.2200910108
+  hidden linearVelocity_0 0.010641430030487509 0.002474677368254187 0.006829940762545145
+  hidden angularVelocity_0 0.0010737306949894923 -1.7989217516549143 0.0014651631565022376
+  hidden rotation_1 0.9999999999999999 0 0 3.9511599444683476
+  hidden linearVelocity_1 0.209579135663868 -0.0010815094741749576 -0.14117139117293775
+  hidden angularVelocity_1 -5.034958957226697 -1.8678045323287498 -6.21462491696189
+  hidden rotation_2 0.9999999999999999 0 0 3.840350730621232
+  hidden linearVelocity_2 -0.1749270875879293 -0.0011388016324511234 0.17147752398884503
+  hidden angularVelocity_2 5.037116230694591 -1.8653868177382302 6.217568219157213
+  hidden translation_6 -0.0004990987153972171 -1.2398488530053486e-05 -0.0003842367332215213
+  hidden rotation_6 5.7766444817117825e-11 1 1.5299681377489684e-09 0.7269320120525367
+  hidden linearVelocity_6 -0.22051593104249415 0.0023099796691326176 -0.033276148482659466
+  hidden angularVelocity_6 0.0010737264490079477 -1.7989217677811975 0.0014651725896324076
+  hidden translation_7 0.00032312626849773096 -1.4142942351011434e-05 -0.0005404572971741128
+  hidden rotation_7 -3.167417820839225e-11 1 1.6856339077996648e-10 -0.7269299933290568
+  hidden linearVelocity_7 0.023432360798138863 0.002286984588775846 -0.2274255446346547
+  hidden angularVelocity_7 0.0010737323080108226 -1.7989217258948376 0.0014651631571522715
+  translation -1.0086061649804914 0.042106419586783725 -2.6293772520110696
+  rotation -0.0037795921326763023 -0.9999642195024736 0.007567985076582068 -2.1991093366647747
+  controller "vaccuumcleaner_createpyexp2"
+}
+Robot {
+  translation 0.1 0 0.1
+  children [
+    Shape {
+      appearance Parquetry {
+        textureTransform TextureTransform {
+          scale 7 7
+        }
+      }
+      geometry Plane {
+        size 10 6
+      }
+    }
+    Display {
+      translation 0 0.01 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "D:/Webots/projects/robots/irobot/create/worlds/textures/dirty.jpg"
+              ]
+            }
+            transparency 0.85
+            roughness 0.5
+            metalness 0
+            IBLStrength 5
+          }
+          geometry Plane {
+            size 10 6
+          }
+        }
+      ]
+      name "ground_display"
+      width 512
+      height 512
+    }
+  ]
+  boundingObject Plane {
+    size 10 6
+  }
+  locked TRUE
+  controller "ground"
+  supervisor TRUE
+}
